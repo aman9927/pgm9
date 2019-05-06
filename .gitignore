@@ -1,52 +1,26 @@
-# Prerequisites
-*.d
+//to add two numbers
+#include<stdio.h>
+getInput(int m,int n)
+{
+    printf("Enter the 2 numbers\n");
+    scanf("%d %d",&m,&n);
+}
+int add(int u,int v)
+{
+    int s;
+    s=u+v;
+    return s;
+}
+int output(int a,int b)
+{
+    int sum;
+    sum=add(a,b);
+    printf("Sum = %d",sum);
+}
+void main()
+{
+    int x,y;
+    getInput(x,y);
+    output(x,y);
+}
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
